@@ -101,7 +101,7 @@ class WeixinHandler(BaseHandler):
                         "where openid = %s"
                         ,Latitude, Longitude,weixinid)
 
-        return "success"
+        self.write("success")
 
 
 #

@@ -3,9 +3,9 @@ from tornado.options import define, options
 
 define("port", default=9002, help="run on the given port", type=int)
 
-define("mysql_host", default="localhost", help="blog database host")
+define("mysql_host", default="166.111.180.69", help="blog database host")
 define("mysql_database", default="wxTest", help="blog database name")
-define("mysql_user", default="root", help="root database user")
+define("mysql_user", default="teq", help="root database user")
 define("mysql_password", default="teq123456", help="root database password")
 
 settings = {}
