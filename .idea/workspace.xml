@@ -74,17 +74,17 @@
       <file leaf-file-name="weixin.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/handler/weixin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5365854" vertical-offset="1332" max-vertical-offset="4815">
-              <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.57723576" vertical-offset="1332" max-vertical-offset="4815">
+              <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
               <folding>
                 <element signature="e#25#35#0" expanded="true" />
-                <marker date="1466173787000" expanded="true" signature="1767:1804" placeholder="SELECT id FR..user..." />
-                <marker date="1466173787000" expanded="true" signature="1767:1802" placeholder="SELECT id FR..user..." />
-                <marker date="1466173787000" expanded="true" signature="1767:1802" placeholder="SELECT id FR..user..." />
-                <marker date="1466173787000" expanded="true" signature="1868:1959" placeholder="insert into ..." />
-                <marker date="1466173787000" expanded="true" signature="2527:2562" placeholder="SELECT id FR..user..." />
-                <marker date="1466173787000" expanded="true" signature="2628:2719" placeholder="insert into ..." />
-                <marker date="1466173787000" expanded="true" signature="2782:2874" placeholder="update user ..." />
+                <marker date="1466173800000" expanded="true" signature="1767:1804" placeholder="SELECT id FR..user..." />
+                <marker date="1466173800000" expanded="true" signature="1767:1802" placeholder="SELECT id FR..user..." />
+                <marker date="1466173800000" expanded="true" signature="1767:1802" placeholder="SELECT id FR..user..." />
+                <marker date="1466173800000" expanded="true" signature="1868:1959" placeholder="insert into ..." />
+                <marker date="1466173800000" expanded="true" signature="2527:2562" placeholder="SELECT id FR..user..." />
+                <marker date="1466173800000" expanded="true" signature="2628:2719" placeholder="insert into ..." />
+                <marker date="1466173800000" expanded="true" signature="2782:2874" placeholder="update user ..." />
               </folding>
             </state>
           </provider>
@@ -552,17 +552,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/handler/weixin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5365854" vertical-offset="1332" max-vertical-offset="4815">
-          <caret line="102" column="45" selection-start-line="102" selection-start-column="45" selection-end-line="102" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.57723576" vertical-offset="1332" max-vertical-offset="4815">
+          <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
           <folding>
             <element signature="e#25#35#0" expanded="true" />
-            <marker date="1466173787000" expanded="true" signature="1767:1804" placeholder="SELECT id FR..user..." />
-            <marker date="1466173787000" expanded="true" signature="1767:1802" placeholder="SELECT id FR..user..." />
-            <marker date="1466173787000" expanded="true" signature="1767:1802" placeholder="SELECT id FR..user..." />
-            <marker date="1466173787000" expanded="true" signature="1868:1959" placeholder="insert into ..." />
-            <marker date="1466173787000" expanded="true" signature="2527:2562" placeholder="SELECT id FR..user..." />
-            <marker date="1466173787000" expanded="true" signature="2628:2719" placeholder="insert into ..." />
-            <marker date="1466173787000" expanded="true" signature="2782:2874" placeholder="update user ..." />
+            <marker date="1466173800000" expanded="true" signature="1767:1804" placeholder="SELECT id FR..user..." />
+            <marker date="1466173800000" expanded="true" signature="1767:1802" placeholder="SELECT id FR..user..." />
+            <marker date="1466173800000" expanded="true" signature="1767:1802" placeholder="SELECT id FR..user..." />
+            <marker date="1466173800000" expanded="true" signature="1868:1959" placeholder="insert into ..." />
+            <marker date="1466173800000" expanded="true" signature="2527:2562" placeholder="SELECT id FR..user..." />
+            <marker date="1466173800000" expanded="true" signature="2628:2719" placeholder="insert into ..." />
+            <marker date="1466173800000" expanded="true" signature="2782:2874" placeholder="update user ..." />
           </folding>
         </state>
       </provider>
