@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f243219-8634-4e01-87bc-adab9ebcafa9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constant.py" afterPath="$PROJECT_DIR$/constant.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handler/oauth.py" afterPath="$PROJECT_DIR$/handler/oauth.py" />
     </list>
     <ignored path="wxTest.iws" />
@@ -126,12 +125,12 @@
       <file leaf-file-name="oauth.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/handler/oauth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.11392405" vertical-offset="510" max-vertical-offset="1590">
-              <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.5316456" vertical-offset="105" max-vertical-offset="1590">
+              <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
               <folding>
                 <element signature="e#25#43#0" expanded="true" />
-                <marker date="1466170586000" expanded="true" signature="2410:2445" placeholder="SELECT id FR..user..." />
-                <marker date="1466170586000" expanded="true" signature="2519:2610" placeholder="insert into ..." />
+                <marker date="1466170670000" expanded="true" signature="2408:2443" placeholder="SELECT id FR..user..." />
+                <marker date="1466170670000" expanded="true" signature="2517:2608" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -155,8 +154,8 @@
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/handler/base.py" />
         <option value="$PROJECT_DIR$/handler/weixin.py" />
-        <option value="$PROJECT_DIR$/handler/oauth.py" />
         <option value="$PROJECT_DIR$/constant.py" />
+        <option value="$PROJECT_DIR$/handler/oauth.py" />
       </list>
     </option>
   </component>
@@ -558,12 +557,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/handler/oauth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.11392405" vertical-offset="510" max-vertical-offset="1590">
-          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.5316456" vertical-offset="105" max-vertical-offset="1590">
+          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
           <folding>
             <element signature="e#25#43#0" expanded="true" />
-            <marker date="1466170586000" expanded="true" signature="2410:2445" placeholder="SELECT id FR..user..." />
-            <marker date="1466170586000" expanded="true" signature="2519:2610" placeholder="insert into ..." />
+            <marker date="1466170670000" expanded="true" signature="2408:2443" placeholder="SELECT id FR..user..." />
+            <marker date="1466170670000" expanded="true" signature="2517:2608" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
