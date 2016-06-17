@@ -12,6 +12,7 @@ class WxOauthHandler(BaseHandler):
     """
     def get_hotel(self):
         openid = self.redirect(Const.URL+"oauth?m=authorize")
+        print openid
         self.redirect("http://baidu.com")
     def get_spot(self):
         pass
@@ -80,8 +81,8 @@ class WxOauthHandler(BaseHandler):
         if not wxuser:
             self.render("error.html", message="get wxuser failed!")
             return
-
-        return wxuser['openid']
+        print wxuser['openid']
+        self.write(wxuser['openid'])
 
 
 
