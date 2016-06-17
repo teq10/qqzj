@@ -16,7 +16,7 @@ class WxOauthHandler(BaseHandler):
         微信授权
         :return:
         """
-        redirect_uri = "http://wx.teq6.com/oauth?m=callback"
+        redirect_uri = "http://wxtest.teq6.com/oauth?m=callback"
         self.api_authorize = Const.WXAPI_AUTHORIZE.format(APPID=Const.WXAPP,
                                                           REDIRECT_URI=redirect_uri,
                                                           SCOPE="snsapi_userinfo",
