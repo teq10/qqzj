@@ -16,7 +16,7 @@ class WxOauthHandler(BaseHandler):
         :return:
         """
         service = self.get_argument("service","hotel")
-        openid = self.get_secure_cookie("userid")
+        openid = self.get_secure_cookie("id")
 
         if openid:
             #jingweidu
