@@ -101,8 +101,8 @@ class WeixinHandler(BaseHandler):
         self.db.execute("update user set latitude=%s,longitude = %s,time=%s"
                         "where openid = %s"
                         ,Latitude, Longitude,weixinid,self.curr_now)
-        #print Latitude
-        self.write("success")
+        print Latitude
+        #self.write("success")
 
 
 #
