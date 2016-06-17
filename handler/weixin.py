@@ -63,6 +63,14 @@ class WeixinHandler(BaseHandler):
 
     def event_subscribe(self, msg):
         weixinid = msg["FromUserName"]
+        user = self.db.get("SELECT id FROM user WHERE openid = %s", weixinid)
+
+        if not user:
+            self.db.execute("insert into user "
+                        "(openid) "
+                        "values (%s) "
+                        ,weixinid)
+
         #print weixinid
         self.write(self.rep_follow(msg))
 
@@ -82,6 +90,17 @@ class WeixinHandler(BaseHandler):
         weixinid = msg['FromUserName']
         Latitude = msg['Latitude']
         Longitude = msg['Longitude']
+        user = self.db.get("SELECT id FROM user WHERE openid = %s", weixinid)
+
+        if not user:
+            self.db.execute("insert into user "
+                        "(openid) "
+                        "values (%s) "
+                        ,weixinid)
+        self.db.execute("update user set latitude=%s,longitude = %s"
+                        "where openid = %s"
+                        ,Latitude, Longitude,weixinid)
+
         return "success"
 
 
@@ -96,8 +115,6 @@ class WeixinHandler(BaseHandler):
             url = Const.URL_MAIN % (keyword)
             #print url
             respond = requests.get(url)
-            #respond=json.loads(respond.content)
-            #print respond.content
             respond = respond.content.strip()
             #code = respond.get('code')
            # text = respond.encode('utf-8')
@@ -105,9 +122,6 @@ class WeixinHandler(BaseHandler):
             url = Const.URL_WEB% (keyword)
 
             info =respond + "\n\n"+"<a href='"+url+"'>查看更多</a>"
-	        #print info
-	        #print "hehe"
-	   # info = text+"\n\n"
             return info
         except Exception, e:
             #print e

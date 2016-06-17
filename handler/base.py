@@ -6,8 +6,11 @@ from setting import settings
 import constant as Const
 class BaseHandler(tornado.web.RequestHandler):
     @property
-    def wxapps(self):
-        return settings['wxapps']
+    def db(self):
+        return self.application.db
+    @property
+    def wxapp(self):
+        return settings[Const.WXAPP]
     @property
     def curr_now(self):
         return datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -20,11 +23,11 @@ class BaseHandler(tornado.web.RequestHandler):
         method = self.get_argument('m', 'default')
         getattr(self, 'post_' + method)()
 
-    def renew_access_token(self,wxapp=Const.WXAPP):
+    def renew_access_token(self):
 
-        if (not self.wxapps[wxapp]['access_token']) or\
-                                int(time.time())-self.wxapps[wxapp]['create_time'] > self.wxapps[wxapp]['expires_in']/2:
-            html = requests.get(Const.URL_ACCESS_TOKEN % (wxapp, self.wxapps[wxapp]['app_secret']))
+        if (not self.wxapp['access_token']) or\
+                                int(time.time())-self.wxapp['create_time'] > self.wxapp['expires_in']/2:
+            html = requests.get(Const.URL_ACCESS_TOKEN % (Const.WXAPP, self.wxapp['app_secret']))
             token = json.loads(html.content)
 
             if token and token.get("access_token", 0) != 0:
@@ -32,18 +35,18 @@ class BaseHandler(tornado.web.RequestHandler):
                 access_token = token['access_token']
                 expires_in = token['expires_in']
                 access_token_create_time = int(time.time())
-                self.wxapps[wxapp]['access_token'] = access_token
-                self.wxapps[wxapp]['expires_in'] = expires_in
-                self.wxapps[wxapp]['create_time'] = access_token_create_time
+                self.wxapp['access_token'] = access_token
+                self.wxapp['expires_in'] = expires_in
+                self.wxapp['create_time'] = access_token_create_time
                 return True
             else:
                 return False
 
         return True
 
-    def get_access_token(self, wxapp=Const.WXAPP):
-        if self.renew_access_token(wxapp):
-            return self.wxapps[wxapp]['access_token']
+    def get_access_token(self):
+        if self.renew_access_token():
+            return self.wxapp['access_token']
         else:
             return ""
 

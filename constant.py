@@ -5,8 +5,8 @@ URL_GET_MENU = "https://api.weixin.qq.com/cgi-bin/menu/get?access_token=%s"
 URL_CREATE_MENU = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=%s"
 URL_DEL_MENU = ""
 
-URL_MAIN = "http://166.111.180.154:8080/Smart_Service_Platform/SearchResultOnly_WeiXin.jsp?SearService=%s"
-URL_WEB = "http://166.111.180.154:8080/Smart_Service_Platform/SearchResultOnly_WeiXinWeb.jsp?SearService=%s"
+URL_MAIN = "http://58.200.129.156:8080/Smart_Service_Platform/SearchResultOnly_WeiXin.jsp?SearService=%s"
+URL_WEB = "http://58.200.129.156:8080/Smart_Service_Platform/SearchResultOnly_WeiXinWeb.jsp?SearService=%s"
 
 WXAPP = "wxfd670b21fe078e9a"
 WXAPP_SECRET = "d4624c36b6795d1d99dcf0547af5443d"

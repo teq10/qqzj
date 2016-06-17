@@ -46,17 +46,17 @@ class WeixinMenuHandler(BaseHandler):
         if access_token:
             html = requests.get(Const.URL_CREATE_MENU % access_token,json.dump(body))
         '''
-        for wxapp in self.wxapps:
-            access_token = self.get_access_token(wxapp)
-            if access_token:
-                data = json.dumps(body,ensure_ascii=False).encode("utf-8")
-                html = requests.post(Const.URL_CREATE_MENU % access_token, data)
+        #for wxapp in self.wxapps:
+        access_token = self.get_access_token()
+        if access_token:
+            data = json.dumps(body,ensure_ascii=False).encode("utf-8")
+            html = requests.post(Const.URL_CREATE_MENU % access_token, data)
                 #print data
 
-                result = json.loads(html.content)
+            result = json.loads(html.content)
                 #print result
-                log_info = {"handler":__name__ + '.' + self.__class__.__name__, "event":"edit_menu",'result':result}
-                logging.info(log_info)
+            log_info = {"handler":__name__ + '.' + self.__class__.__name__, "event":"edit_menu",'result':result}
+            logging.info(log_info)
         self.get_default()
 
 

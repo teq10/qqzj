@@ -1,13 +1,17 @@
 import os
 from tornado.options import define, options
 
-define("port", default=9001, help="run on the given port", type=int)
+define("port", default=9002, help="run on the given port", type=int)
+
+define("mysql_host", default="localhost", help="blog database host")
+define("mysql_database", default="wxTest", help="blog database name")
+define("mysql_user", default="root", help="root database user")
+define("mysql_password", default="teq123456", help="root database password")
 
 settings = {}
 settings['token'] = "0cf21ca674ee11e3987122000afa135c"
-settings['wxapps'] = {'wxfd670b21fe078e9a': {'app_secret': 'd4624c36b6795d1d99dcf0547af5443d', 'access_token': "",
-                                            'expires_in': 0, 'create_time': 0},
-                     'wx47a57087c3c518e4': {'app_secret': "", 'access_token': "", 'expires_in': 0, 'create_time': 0}}
+settings['wxfd670b21fe078e9a'] = {'access_token': "",'expires_in': 0, 'create_time': 0}
+
 settings['debug'] = True
 settings['root_path'] = os.path.join(os.path.dirname(os.path.abspath(__file__)), "")
 settings['template_path'] = os.path.join(settings['root_path'], "template")
