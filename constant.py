@@ -5,12 +5,12 @@ URL_GET_MENU = "https://api.weixin.qq.com/cgi-bin/menu/get?access_token=%s"
 URL_CREATE_MENU = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=%s"
 URL_DEL_MENU = ""
 
-URL_MAIN = "http://58.200.129.156:8080/Smart_Service_Platform/SearchResultOnly_WeiXin.jsp?SearService=%s"
-URL_WEB = "http://58.200.129.156:8080/Smart_Service_Platform/SearchResultOnly_WeiXinWeb.jsp?SearService=%s"
-URL_HOTEL = "http://58.200.129.156:8080/Smart_Service_Platform/Weixin_Hotel.jsp"
-URL_SPOT = "http://58.200.129.156:8080/Smart_Service_Platform/Weixin_Spot.jsp"
-URL_RESTAURANT = "http://58.200.129.156:8080/Smart_Service_Platform/Weixin_Restaurant.jsp"
-URL_SERVICE = "http://58.200.129.156:8080/Smart_Service_Platform/Weixin_%s.jsp"
+URL_MAIN = "http://166.111.180.96:8080/Smart_Service_Platform/SearchResultOnly_WeiXin.jsp?SearService=%s"
+URL_WEB = "http://166.111.180.96:8080/Smart_Service_Platform/SearchResultOnly_WeiXinWeb.jsp?SearService=%s"
+URL_HOTEL = "http://166.111.180.96:8080/Smart_Service_Platform/Weixin_Hotel.jsp"
+URL_SPOT = "http://166.111.180.96:8080/Smart_Service_Platform/Weixin_Spot.jsp"
+URL_RESTAURANT = "http://166.111.180.96:8080/Smart_Service_Platform/Weixin_Restaurant.jsp"
+URL_SERVICE = "http://166.111.180.96:8080/Smart_Service_Platform/Weixin_%s.jsp"
 
 
 #need to change
