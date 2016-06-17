@@ -102,7 +102,7 @@ class WeixinHandler(BaseHandler):
                         "where openid = %s"
                         ,Latitude, Longitude,weixinid,self.curr_now)
         #print Latitude
-        #self.write("")
+        self.write("success")
 
 
 #
