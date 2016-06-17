@@ -49,7 +49,8 @@ class WeixinHandler(BaseHandler):
                 #print "False"
                 info = u"Message verification failed"
             logging.info(info)
-            self.write(self.rep_text(msg, info))
+            if info:
+                self.write(self.rep_text(msg, info))
         except Exception, e:
             logging.error(e)
 
@@ -100,8 +101,8 @@ class WeixinHandler(BaseHandler):
         self.db.execute("update user set latitude=%s,longitude = %s"
                         "where openid = %s"
                         ,Latitude, Longitude,weixinid)
-
-        self.write("success")
+        #print Latitude
+        #self.write("")
 
 
 #
