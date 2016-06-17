@@ -16,7 +16,7 @@ URL_SERVICE = "http://58.200.129.156:8080/Smart_Service_Platform/Weixin_%s"
 #need to change
 WXAPP = "wxfd670b21fe078e9a"
 WXAPP_SECRET = "d4624c36b6795d1d99dcf0547af5443d"
-URL = "http://wxtest.teq6.com"
+URL = "http://wxtest.teq6.com/"
 
 
 # 微信api常量定义

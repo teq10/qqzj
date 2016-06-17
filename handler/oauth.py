@@ -91,7 +91,7 @@ class WxOauthHandler(BaseHandler):
                         "(openid) "
                         "values (%s) "
                         ,wxuser['openid'])
-        
+
         #jingweidu
         self.redirect(Const.URL_SERVICE)%(service+".jsp")
 
