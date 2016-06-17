@@ -16,7 +16,7 @@ class WxOauthHandler(BaseHandler):
         :return:
         """
         service = self.get_argument("service","hotel")
-        openid = self.get_secure_cookie("openid")
+        openid = self.get_secure_cookie("userid")
 
         if openid:
             #jingweidu
@@ -85,7 +85,7 @@ class WxOauthHandler(BaseHandler):
             self.render("error.html", message="get wxuser failed!")
             return
         #print wxuser['openid']
-        self.set_secure_cookie("openid",wxuser['openid'])
+        self.set_secure_cookie("userid",wxuser['openid'])
         user = self.db.get("SELECT id FROM user WHERE openid = %s", wxuser['openid'])
 
         if not user:
