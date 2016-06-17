@@ -19,7 +19,7 @@ class WxOauthHandler(BaseHandler):
         openid = self.get_secure_cookie("openid")
         if openid:
             #jingweidu
-            self.redirect(Const.URL_SERVICE)%(service+".jsp")
+            self.redirect(Const.URL_SERVICE) % (service)
         else:
 
 
