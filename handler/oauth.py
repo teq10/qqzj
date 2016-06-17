@@ -62,20 +62,20 @@ class WxOauthHandler(BaseHandler):
             return
 
         token = self._get_access_token(code)
-        print token
+        #print token
 
         if not token:
             self.render("error.html", message="get access_token failed!")
             return
 
         wxuser = self._get_userinfo(token.get("access_token"), token.get("openid"))
-        print wxuser
+        #print wxuser
 
         if not wxuser:
             self.render("error.html", message="get wxuser failed!")
             return
 
-        self.write(str(wxuser))
+        self.write(wxuser['openid'])
 
 
 
