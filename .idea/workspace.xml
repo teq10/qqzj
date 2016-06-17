@@ -125,12 +125,12 @@
       <file leaf-file-name="oauth.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/handler/oauth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5316456" vertical-offset="105" max-vertical-offset="1590">
-              <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.5822785" vertical-offset="1195" max-vertical-offset="1590">
+              <caret line="95" column="42" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
               <folding>
                 <element signature="e#25#43#0" expanded="true" />
-                <marker date="1466170670000" expanded="true" signature="2408:2443" placeholder="SELECT id FR..user..." />
-                <marker date="1466170670000" expanded="true" signature="2517:2608" placeholder="insert into ..." />
+                <marker date="1466170782000" expanded="true" signature="2410:2445" placeholder="SELECT id FR..user..." />
+                <marker date="1466170782000" expanded="true" signature="2519:2610" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -557,12 +557,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/handler/oauth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5316456" vertical-offset="105" max-vertical-offset="1590">
-          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.5822785" vertical-offset="1195" max-vertical-offset="1590">
+          <caret line="95" column="42" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
           <folding>
             <element signature="e#25#43#0" expanded="true" />
-            <marker date="1466170670000" expanded="true" signature="2408:2443" placeholder="SELECT id FR..user..." />
-            <marker date="1466170670000" expanded="true" signature="2517:2608" placeholder="insert into ..." />
+            <marker date="1466170782000" expanded="true" signature="2410:2445" placeholder="SELECT id FR..user..." />
+            <marker date="1466170782000" expanded="true" signature="2519:2610" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
