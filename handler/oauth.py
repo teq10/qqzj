@@ -10,13 +10,19 @@ class WxOauthHandler(BaseHandler):
     微信授权类
 
     """
-
+    def get_hotel(self):
+        openid = self.redirect(Const.URL+"oauth?m=authorize")
+        self.redirect("http://baidu.com")
+    def get_spot(self):
+        pass
+    def get_restanrant(self):
+        pass
     def get_authorize(self):
         """
         微信授权
         :return:
         """
-        redirect_uri = "http://wxtest.teq6.com/oauth?m=callback"
+        redirect_uri = Const.URL+"oauth?m=callback"
         self.api_authorize = Const.WXAPI_AUTHORIZE.format(APPID=Const.WXAPP,
                                                           REDIRECT_URI=redirect_uri,
                                                           SCOPE="snsapi_userinfo",
@@ -75,7 +81,7 @@ class WxOauthHandler(BaseHandler):
             self.render("error.html", message="get wxuser failed!")
             return
 
-        self.write(wxuser['openid'])
+        return wxuser['openid']
 
 
 

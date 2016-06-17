@@ -7,11 +7,19 @@ URL_DEL_MENU = ""
 
 URL_MAIN = "http://58.200.129.156:8080/Smart_Service_Platform/SearchResultOnly_WeiXin.jsp?SearService=%s"
 URL_WEB = "http://58.200.129.156:8080/Smart_Service_Platform/SearchResultOnly_WeiXinWeb.jsp?SearService=%s"
+URL_HOTEL = "http://58.200.129.156:8080/Smart_Service_Platform/Weixin_Hotel.jsp"
+URL_SPOT = "http://58.200.129.156:8080/Smart_Service_Platform/Weixin_Spot.jsp"
+URL_RESTAURANT = "http://58.200.129.156:8080/Smart_Service_Platform/Weixin_Restaurant.jsp"
 
+
+#need to change
 WXAPP = "wxfd670b21fe078e9a"
 WXAPP_SECRET = "d4624c36b6795d1d99dcf0547af5443d"
+URL = "http://wxtest.teq6.com"
+
 
 # 微信api常量定义
 WXAPI_AUTHORIZE = "https://open.weixin.qq.com/connect/oauth2/authorize?appid={APPID}&redirect_uri={REDIRECT_URI}&response_type=code&scope={SCOPE}&state={STATE}#wechat_redirect"
 WXAPI_WXUSER_ACCESS_TOKEN = "https://api.weixin.qq.com/sns/oauth2/access_token?appid={APPID}&secret={SECRET}&code={CODE}&grant_type=authorization_code"
 WXAPI_USERINFO = "https://api.weixin.qq.com/sns/userinfo?access_token={ACCESS_TOKEN}&openid={OPENID}&lang=zh_CN"
+
