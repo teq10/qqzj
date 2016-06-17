@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f243219-8634-4e01-87bc-adab9ebcafa9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constant.py" afterPath="$PROJECT_DIR$/constant.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handler/oauth.py" afterPath="$PROJECT_DIR$/handler/oauth.py" />
     </list>
     <ignored path="wxTest.iws" />
@@ -40,8 +41,8 @@
       <file leaf-file-name="constant.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/constant.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="70" max-vertical-offset="465">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+              <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -74,8 +75,8 @@
       <file leaf-file-name="weixin.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handler/weixin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1340" max-vertical-offset="4815">
-              <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1295" max-vertical-offset="4815">
+              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
               <folding>
                 <element signature="e#25#35#0" expanded="true" />
                 <marker date="1466157527000" expanded="true" signature="1767:1804" placeholder="SELECT id FR..user..." />
@@ -93,8 +94,8 @@
       <file leaf-file-name="weixinmenu.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handler/weixinmenu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.730769" vertical-offset="372" max-vertical-offset="1035">
-              <caret line="33" column="32" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="32" />
+            <state vertical-scroll-proportion="-4.1538463" vertical-offset="372" max-vertical-offset="1035">
+              <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
               <folding>
                 <element signature="e#25#43#0" expanded="true" />
               </folding>
@@ -105,8 +106,8 @@
       <file leaf-file-name="base.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handler/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154" vertical-offset="252" max-vertical-offset="915">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.576923" vertical-offset="0" max-vertical-offset="915">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -125,10 +126,12 @@
       <file leaf-file-name="oauth.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/handler/oauth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14634146" vertical-offset="156" max-vertical-offset="1425">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state vertical-scroll-proportion="3.5316455" vertical-offset="0" max-vertical-offset="1590">
+              <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
               <folding>
                 <element signature="e#25#43#0" expanded="true" />
+                <marker date="1466170197000" expanded="true" signature="2415:2450" placeholder="SELECT id FR..user..." />
+                <marker date="1466170197000" expanded="true" signature="2524:2615" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -150,9 +153,9 @@
         <option value="$PROJECT_DIR$/handler/weixinmenu.py" />
         <option value="$PROJECT_DIR$/setting.py" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/handler/weixin.py" />
         <option value="$PROJECT_DIR$/handler/base.py" />
         <option value="$PROJECT_DIR$/constant.py" />
+        <option value="$PROJECT_DIR$/handler/weixin.py" />
         <option value="$PROJECT_DIR$/handler/oauth.py" />
       </list>
     </option>
@@ -415,6 +418,9 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4f243219-8634-4e01-87bc-adab9ebcafa9" name="Default" comment="" />
@@ -425,7 +431,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="100" y="43" width="1176" height="777" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329927" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -479,16 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handler/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
@@ -499,28 +495,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/route.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/handler/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="252" max-vertical-offset="915">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state vertical-scroll-proportion="-15.576923" vertical-offset="0" max-vertical-offset="915">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="480">
+          <caret line="12" column="74" selection-start-line="12" selection-start-column="74" selection-end-line="12" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/handler/weixinmenu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.730769" vertical-offset="372" max-vertical-offset="1035">
-          <caret line="33" column="32" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="32" />
+        <state vertical-scroll-proportion="-4.1538463" vertical-offset="372" max-vertical-offset="1035">
+          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
           <folding>
             <element signature="e#25#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/handler/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/handler/weixin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1340" max-vertical-offset="4815">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1295" max-vertical-offset="4815">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
           <folding>
             <element signature="e#25#35#0" expanded="true" />
             <marker date="1466157527000" expanded="true" signature="1767:1804" placeholder="SELECT id FR..user..." />
@@ -534,28 +556,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/route.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constant.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="70" max-vertical-offset="465">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/handler/oauth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14634146" vertical-offset="156" max-vertical-offset="1425">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state vertical-scroll-proportion="3.5316455" vertical-offset="0" max-vertical-offset="1590">
+          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
           <folding>
             <element signature="e#25#43#0" expanded="true" />
+            <marker date="1466170197000" expanded="true" signature="2415:2450" placeholder="SELECT id FR..user..." />
+            <marker date="1466170197000" expanded="true" signature="2524:2615" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>

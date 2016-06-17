@@ -10,26 +10,26 @@ class WxOauthHandler(BaseHandler):
     微信授权类
 
     """
-    def get_hotel(self):
-        openid = self.redirect(Const.URL+"oauth?m=authorize")
-        print openid
-        self.redirect("http://baidu.com")
-    def get_spot(self):
-        pass
-    def get_restanrant(self):
-        pass
     def get_authorize(self):
         """
         微信授权
         :return:
         """
-        redirect_uri = Const.URL+"oauth?m=callback"
-        self.api_authorize = Const.WXAPI_AUTHORIZE.format(APPID=Const.WXAPP,
+        service = self.get_argument("service","hotel")
+        openid = self.get_secure_cookie("openid")
+        if openid:
+            #jingweidu
+            self.redirect(Const.URL_SERVICE)%(service+".jsp")
+        else:
+
+
+            redirect_uri = Const.URL+"oauth?m=callback&service="+service
+            self.api_authorize = Const.WXAPI_AUTHORIZE.format(APPID=Const.WXAPP,
                                                           REDIRECT_URI=redirect_uri,
                                                           SCOPE="snsapi_userinfo",
                                                           STATE=0)
 
-        self.redirect(self.api_authorize)
+            self.redirect(self.api_authorize)
 
 
     def _get_access_token(self, code=""):
@@ -63,6 +63,7 @@ class WxOauthHandler(BaseHandler):
 
         :return:
         """
+        service = self.get_argument("service","hotel")
         code = self.get_argument("code")
         if not code:
             self.render("error.html", message="get code failed!")
@@ -81,8 +82,18 @@ class WxOauthHandler(BaseHandler):
         if not wxuser:
             self.render("error.html", message="get wxuser failed!")
             return
-        print wxuser['openid']
-        self.write(wxuser['openid'])
+        #print wxuser['openid']
+        self.set_secure_cookie("openid",wxuser['openid'])
+        user = self.db.get("SELECT id FROM user WHERE openid = %s", wxuser['openid'])
+
+        if not user:
+            self.db.execute("insert into user "
+                        "(openid) "
+                        "values (%s) "
+                        ,wxuser['openid'])
+        
+        #jingweidu
+        self.redirect(Const.URL_SERVICE)%(service+".jsp")
 
 
 
