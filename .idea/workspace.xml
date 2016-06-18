@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f243219-8634-4e01-87bc-adab9ebcafa9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handler/weixin.py" afterPath="$PROJECT_DIR$/handler/weixin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handler/oauth.py" afterPath="$PROJECT_DIR$/handler/oauth.py" />
     </list>
     <ignored path="wxTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weixin.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="weixin.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handler/weixin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57723576" vertical-offset="1332" max-vertical-offset="4815">
-              <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+            <state vertical-scroll-proportion="-27.807692" vertical-offset="837" max-vertical-offset="4815">
+              <caret line="104" column="30" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
               <folding>
                 <element signature="e#25#35#0" expanded="true" />
                 <marker date="1466173800000" expanded="true" signature="1767:1804" placeholder="SELECT id FR..user..." />
@@ -122,15 +122,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="oauth.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="oauth.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/handler/oauth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1650">
-              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.43089432" vertical-offset="1296" max-vertical-offset="1665">
+              <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding>
                 <element signature="e#25#43#0" expanded="true" />
-                <marker date="1466172866000" expanded="true" signature="2453:2488" placeholder="SELECT id FR..user..." />
-                <marker date="1466172866000" expanded="true" signature="2562:2653" placeholder="insert into ..." />
+                <marker date="1466215793000" expanded="true" signature="2470:2505" placeholder="SELECT id FR..user..." />
+                <marker date="1466215793000" expanded="true" signature="2579:2670" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -154,8 +154,8 @@
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/handler/base.py" />
         <option value="$PROJECT_DIR$/constant.py" />
-        <option value="$PROJECT_DIR$/handler/oauth.py" />
         <option value="$PROJECT_DIR$/handler/weixin.py" />
+        <option value="$PROJECT_DIR$/handler/oauth.py" />
       </list>
     </option>
   </component>
@@ -538,22 +538,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handler/oauth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1650">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="e#25#43#0" expanded="true" />
-            <marker date="1466172866000" expanded="true" signature="2453:2488" placeholder="SELECT id FR..user..." />
-            <marker date="1466172866000" expanded="true" signature="2562:2653" placeholder="insert into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/handler/weixin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57723576" vertical-offset="1332" max-vertical-offset="4815">
-          <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+        <state vertical-scroll-proportion="-27.807692" vertical-offset="837" max-vertical-offset="4815">
+          <caret line="104" column="30" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
           <folding>
             <element signature="e#25#35#0" expanded="true" />
             <marker date="1466173800000" expanded="true" signature="1767:1804" placeholder="SELECT id FR..user..." />
@@ -563,6 +551,18 @@
             <marker date="1466173800000" expanded="true" signature="2527:2562" placeholder="SELECT id FR..user..." />
             <marker date="1466173800000" expanded="true" signature="2628:2719" placeholder="insert into ..." />
             <marker date="1466173800000" expanded="true" signature="2782:2874" placeholder="update user ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handler/oauth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43089432" vertical-offset="1296" max-vertical-offset="1665">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#43#0" expanded="true" />
+            <marker date="1466215793000" expanded="true" signature="2470:2505" placeholder="SELECT id FR..user..." />
+            <marker date="1466215793000" expanded="true" signature="2579:2670" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>

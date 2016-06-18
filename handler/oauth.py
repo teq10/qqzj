@@ -20,7 +20,8 @@ class WxOauthHandler(BaseHandler):
 
         if openid:
             #jingweidu
-            print openid
+            #
+            # print openid
             self.redirect((Const.URL_SERVICE) % service)
         else:
 
@@ -85,7 +86,7 @@ class WxOauthHandler(BaseHandler):
             self.render("error.html", message="get wxuser failed!")
             return
         #print wxuser['openid']
-        print "hehe"
+        #print "hehe"
         self.set_secure_cookie("userid",wxuser['openid'])
         user = self.db.get("SELECT id FROM user WHERE openid = %s", wxuser['openid'])
 
