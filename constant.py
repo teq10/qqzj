@@ -14,8 +14,12 @@ URL_SERVICE = "http://166.111.180.96:8080/Smart_Service_Platform/Weixin_%s.jsp"
 
 
 #need to change
-WXAPP = "wxfd670b21fe078e9a"
-WXAPP_SECRET = "d4624c36b6795d1d99dcf0547af5443d"
+#test
+#WXAPP = "wxfd670b21fe078e9a"
+#WXAPP_SECRET = "d4624c36b6795d1d99dcf0547af5443d"
+WXAPP = "wxff3a9fc0253c008e"
+WXAPP_SECRET = "dfb32f5ce12c49001ea700d709233083"
+
 URL = "http://wxtest.teq6.com/"
 
 
