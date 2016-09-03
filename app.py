@@ -4,7 +4,7 @@ import torndb
 import tornado.web
 import tornado.httpserver
 from tornado.options import options
-options.parse_command_line()
+#options.parse_command_line()
 
 from route import routes
 from setting import settings
