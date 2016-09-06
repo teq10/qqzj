@@ -65,7 +65,7 @@ class WeixinHandler(BaseHandler):
     def event_subscribe(self, msg):
         weixinid = msg["FromUserName"]
 
-        '''
+
         user = self.db.get("SELECT id FROM user WHERE openid = %s", weixinid)
 
         if not user:
@@ -75,7 +75,7 @@ class WeixinHandler(BaseHandler):
                         ,weixinid)
 
         #print weixinid
-        '''
+
         self.write(self.rep_follow(msg))
 
     def event_unsubscribe(self, msg):
@@ -97,10 +97,10 @@ class WeixinHandler(BaseHandler):
 
         Latitude = msg['Latitude']
         Longitude = msg['Longitude']
-        print Latitude,Longitude
-        '''
+        #print Latitude,Longitude
 
-        user = self.db.get("SELECT id FROM user WHERE openid = %s", weixinid)
+
+        user = self.db.get("SELECT openid FROM user WHERE openid = %s", weixinid)
 
         if not user:
             self.db.execute("insert into user "
@@ -112,8 +112,6 @@ class WeixinHandler(BaseHandler):
                         ,Latitude, Longitude,self.curr_now,weixinid)
         #print Latitude
         #self.write("success")
-
-        '''
 
 
 #
