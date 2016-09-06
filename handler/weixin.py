@@ -99,7 +99,7 @@ class WeixinHandler(BaseHandler):
         Longitude = msg['Longitude']
         print Latitude,Longitude
         '''
-        
+
         user = self.db.get("SELECT id FROM user WHERE openid = %s", weixinid)
 
         if not user:
