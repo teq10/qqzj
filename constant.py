@@ -21,8 +21,8 @@ WXAPP = "wx98b4d0fc35d2b097"#"wxff3a9fc0253c008e"
 WXAPP_SECRET ="06664f5177cd93a8d93c5297c471c364" #"dfb32f5ce12c49001ea700d709233083"
 
 #微信项目地址
-#URL = "http://wxtest.teq6.com/"
-URL = "http://123.56.154.165/"
+URL = "http://wxtest.teq6.com/"
+
 
 # 微信api常量定义
 WXAPI_AUTHORIZE = "https://open.weixin.qq.com/connect/oauth2/authorize?appid={APPID}&redirect_uri={REDIRECT_URI}&response_type=code&scope={SCOPE}&state={STATE}#wechat_redirect"
