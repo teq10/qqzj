@@ -15,7 +15,7 @@ class WxOauthHandler(BaseHandler):
         微信授权
         :return:
         """
-        service = self.get_argument("service","otel")
+        service = self.get_argument("service","Hotel")
         openid = self.get_secure_cookie("id")
 
         if openid:
