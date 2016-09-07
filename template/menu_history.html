@@ -8,7 +8,7 @@
 --菜单显示--
 <table >
             <tbody >
-            {% if menu_history.has_key('menu') %}
+            {% if menu_history and menu_history.has_key('menu') %}
 
             {% for button in menu_history['menu']['button'] %}
 
