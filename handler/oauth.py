@@ -88,7 +88,7 @@ class WxOauthHandler(BaseHandler):
         #print wxuser['openid']
         #print "hehe"
         self.set_secure_cookie("userid",wxuser['openid'])
-        user = self.db.get("SELECT id FROM user WHERE openid = %s", wxuser['openid'])
+        user = self.db.get("SELECT openid FROM user WHERE openid = %s", wxuser['openid'])
 
         if not user:
             self.db.execute("insert into user "
