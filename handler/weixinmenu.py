@@ -21,7 +21,7 @@ class WeixinMenuHandler(BaseHandler):
         #edit menu
         name0 = self.get_argument("name0",'')
         if not name0:
-            return
+            self.redirect("/menu")
         body = {}
         newmenu = []
         for i in range(3):
@@ -59,6 +59,6 @@ class WeixinMenuHandler(BaseHandler):
             log_info = {"handler":__name__ + '.' + self.__class__.__name__, "event":"edit_menu",'result':result}
             logging.info(log_info)
 
-        self.render("/menu")
+        self.redirect("/menu")
 
 
