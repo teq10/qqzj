@@ -3,6 +3,7 @@
 from base import *
 import requests
 import json
+import urllib
 
 class WxOauthHandler(BaseHandler):
 
@@ -29,6 +30,7 @@ class WxOauthHandler(BaseHandler):
 
             redirect_uri = Const.URL+"oauth?m=callback&service="+service
             print 1,redirect_uri
+            redirect_uri = urllib.quote(redirect_uri)
             self.api_authorize = Const.WXAPI_AUTHORIZE.format(APPID=Const.WXAPP,
                                                           REDIRECT_URI=redirect_uri,
                                                           SCOPE="snsapi_userinfo",
