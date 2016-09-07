@@ -8,6 +8,7 @@ class WeixinMenuHandler(BaseHandler):
     def get_default(self):
         #get old menu message
         access_token = self.get_access_token()
+        print access_token
         menu_history = ""
         if access_token:
             html = requests.get(Const.URL_GET_MENU % access_token)
