@@ -88,7 +88,7 @@ class WxOauthHandler(BaseHandler):
         if not wxuser:
             self.render("error.html", message="get wxuser failed!")
             return
-        #print wxuser['openid']
+        print wxuser['openid']
         #print "hehe"
         self.set_secure_cookie("userid",wxuser['openid'])
         user = self.db.get("SELECT openid FROM user WHERE openid = %s", wxuser['openid'])

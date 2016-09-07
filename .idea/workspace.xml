@@ -129,12 +129,12 @@
       <file leaf-file-name="oauth.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/handler/oauth.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30379745" vertical-offset="270" max-vertical-offset="1725">
-              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.6455696" vertical-offset="1200" max-vertical-offset="1725">
+              <caret line="97" column="14" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
               <folding>
                 <element signature="e#25#43#0" expanded="true" />
-                <marker date="1473231102000" expanded="true" signature="2629:2668" placeholder="SELECT openi..user..." />
-                <marker date="1473231102000" expanded="true" signature="2742:2833" placeholder="insert into ..." />
+                <marker date="1473231937000" expanded="true" signature="2628:2667" placeholder="SELECT openi..user..." />
+                <marker date="1473231937000" expanded="true" signature="2741:2832" placeholder="insert into ..." />
               </folding>
             </state>
           </provider>
@@ -569,8 +569,8 @@
           <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding>
             <element signature="e#25#43#0" expanded="true" />
-            <marker date="1473231102000" expanded="true" signature="2629:2668" placeholder="SELECT openi..user..." />
-            <marker date="1473231102000" expanded="true" signature="2742:2833" placeholder="insert into ..." />
+            <marker date="1473231937000" expanded="true" signature="2628:2667" placeholder="SELECT openi..user..." />
+            <marker date="1473231937000" expanded="true" signature="2741:2832" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
@@ -704,12 +704,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/handler/oauth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30379745" vertical-offset="270" max-vertical-offset="1725">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.6455696" vertical-offset="1200" max-vertical-offset="1725">
+          <caret line="97" column="14" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
           <folding>
             <element signature="e#25#43#0" expanded="true" />
-            <marker date="1473231102000" expanded="true" signature="2629:2668" placeholder="SELECT openi..user..." />
-            <marker date="1473231102000" expanded="true" signature="2742:2833" placeholder="insert into ..." />
+            <marker date="1473231937000" expanded="true" signature="2628:2667" placeholder="SELECT openi..user..." />
+            <marker date="1473231937000" expanded="true" signature="2741:2832" placeholder="insert into ..." />
           </folding>
         </state>
       </provider>
