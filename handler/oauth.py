@@ -100,6 +100,7 @@ class WxOauthHandler(BaseHandler):
         #jingweidu
 
         #self.redirect((Const.URL_SERVICE)%service)
+	print "here"
         self.render("%s.html"%service)
 
 
