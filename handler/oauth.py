@@ -16,8 +16,9 @@ class WxOauthHandler(BaseHandler):
         :return:
         """
         service = self.get_argument("service","Hotel")
+        print 1,service
         openid = self.get_secure_cookie("id")
-
+        print "openid222",openid
         if openid:
             #jingweidu
             #
@@ -68,6 +69,7 @@ class WxOauthHandler(BaseHandler):
         :return:
         """
         service = self.get_argument("service","Hotel")
+        print 2,service
         code = self.get_argument("code")
         if not code:
             self.render("error.html", message="get code failed!")
