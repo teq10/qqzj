@@ -8,8 +8,9 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+handler/*.pyc
 *.pyc
-.idea/
+.idea/*
 env/
 build/
 develop-eggs/
@@ -22,6 +23,7 @@ lib64/
 parts/
 sdist/
 var/
+.idea/*
 *.xml
 *.egg-info/
 .installed.cfg
