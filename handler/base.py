@@ -29,7 +29,7 @@ class BaseHandler(tornado.web.RequestHandler):
                                 int(time.time())-self.wxapp['create_time'] > self.wxapp['expires_in']/2:
             html = requests.get(Const.URL_ACCESS_TOKEN % (Const.WXAPP, Const.WXAPP_SECRET))
             token = json.loads(html.content)
-
+            print token
             if token and token.get("access_token", 0) != 0:
 
                 access_token = token['access_token']
