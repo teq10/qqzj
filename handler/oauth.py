@@ -23,7 +23,8 @@ class WxOauthHandler(BaseHandler):
             #jingweidu
             #
             print "openid:",openid
-            self.redirect((Const.URL_SERVICE) % service)
+            self.render("%s.html"%service)
+            #self.redirect((Const.URL_SERVICE) % service)
         else:
 
 
