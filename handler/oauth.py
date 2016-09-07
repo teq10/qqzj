@@ -99,7 +99,8 @@ class WxOauthHandler(BaseHandler):
 
         #jingweidu
 
-        self.redirect((Const.URL_SERVICE)%service)
+        #self.redirect((Const.URL_SERVICE)%service)
+        self.render("%s.html"%service)
 
 
 
