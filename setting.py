@@ -10,9 +10,9 @@ define("mysql_password", default="cims603", help="root database password")
 
 settings = {}
 settings['token'] = "0cf21ca674ee11e3987122000afa135c"
-settings['wxfd670b21fe078e9a'] = {'access_token': "",'expires_in': 0, 'create_time': 0}
-settings['wxff3a9fc0253c008e'] = {'access_token': "",'expires_in': 0, 'create_time': 0}
-settings['wx98b4d0fc35d2b097'] = {'access_token': "",'expires_in': 0, 'create_time': 0}
+#settings['wxfd670b21fe078e9a'] = {'access_token': "",'expires_in': 0, 'create_time': 0}
+#settings['wxff3a9fc0253c008e'] = {'access_token': "",'expires_in': 0, 'create_time': 0}
+settings['wx98b4d0fc35d2b097'] = {'access_token': "",'expires_in': 5000, 'create_time': 0}
 
 settings['debug'] = True
 settings['root_path'] = os.path.join(os.path.dirname(os.path.abspath(__file__)), "")
