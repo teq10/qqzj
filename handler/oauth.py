@@ -15,7 +15,7 @@ class WxOauthHandler(BaseHandler):
         微信授权
         :return:
         """
-        service = self.get_argument("service","hotel")
+        service = self.get_argument("service","otel")
         openid = self.get_secure_cookie("id")
 
         if openid:
@@ -67,7 +67,7 @@ class WxOauthHandler(BaseHandler):
 
         :return:
         """
-        service = self.get_argument("service","hotel")
+        service = self.get_argument("service","Hotel")
         code = self.get_argument("code")
         if not code:
             self.render("error.html", message="get code failed!")
