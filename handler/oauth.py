@@ -17,7 +17,7 @@ class WxOauthHandler(BaseHandler):
         """
         service = self.get_argument("service","Hotel")
         print 1,service
-        openid = self.get_secure_cookie("id")
+        openid = self.get_secure_cookie("userid")
         print "openid222",openid
         if openid:
             #jingweidu
