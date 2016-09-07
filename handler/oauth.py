@@ -17,7 +17,7 @@ class WxOauthHandler(BaseHandler):
         :return:
         """
         service = self.get_argument("service","Hotel")
-        print 1,service
+        #print 1,service
         openid = self.get_secure_cookie("userid")
 
         if False:#openid:
@@ -29,13 +29,13 @@ class WxOauthHandler(BaseHandler):
 
 
             redirect_uri = Const.URL+"oauth?m=callback&service="+service
-            print 1,redirect_uri
+            #print 1,redirect_uri
             redirect_uri = urllib.quote(redirect_uri)
             self.api_authorize = Const.WXAPI_AUTHORIZE.format(APPID=Const.WXAPP,
                                                           REDIRECT_URI=redirect_uri,
                                                           SCOPE="snsapi_userinfo",
                                                           STATE=0)
-            print 2,self.api_authorize
+            #print 2,self.api_authorize
             self.redirect(self.api_authorize)
 
 
@@ -71,7 +71,7 @@ class WxOauthHandler(BaseHandler):
         :return:
         """
         service = self.get_argument("service","Hotel")
-        print 2,service
+        #print 2,service
         code = self.get_argument("code")
         if not code:
             self.render("error.html", message="get code failed!")
