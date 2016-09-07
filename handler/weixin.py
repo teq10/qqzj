@@ -122,10 +122,13 @@ class WeixinHandler(BaseHandler):
             #图灵机器人
             #url = "http://www.tuling123.com/openapi/api?key=c676b2dd0e54d0612fd37c47fa8c1e5d&info=%s&userid=%s" % (keyword, weixinid)
             #print keyword
+            '''
             url = Const.URL_MAIN % (keyword)
             #print url
             respond = requests.get(url)
             respond = respond.content.strip()
+            '''
+            respond = keyword
             #code = respond.get('code')
            # text = respond.encode('utf-8')
             #url = respond.get('url').encode('utf-8')
