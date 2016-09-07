@@ -23,8 +23,8 @@ class WxOauthHandler(BaseHandler):
         if False:#openid:
             #jingweidu
             #print "openid:",openid
-            self.render("%s.html"%service)
-            #self.redirect((Const.URL_SERVICE) % service)
+            #self.render("%s.html"%service)
+            self.redirect((Const.URL_SERVICE) % service)
         else:
 
 
@@ -103,8 +103,8 @@ class WxOauthHandler(BaseHandler):
 
         #jingweidu
 
-        #self.redirect((Const.URL_SERVICE)%service)
-        self.render("%s.html"%service)
+        self.redirect((Const.URL_SERVICE)%service)
+        #self.render("%s.html"%service)
 
 
 
