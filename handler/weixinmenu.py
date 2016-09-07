@@ -58,7 +58,7 @@ class WeixinMenuHandler(BaseHandler):
                 #print result
             log_info = {"handler":__name__ + '.' + self.__class__.__name__, "event":"edit_menu",'result':result}
             logging.info(log_info)
-        self.get_default()
 
+        self.render("/menu")
 
 
