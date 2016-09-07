@@ -21,18 +21,18 @@ class WxOauthHandler(BaseHandler):
         if openid:
             #jingweidu
             #
-            # print openid
+            print "openid:",openid
             self.redirect((Const.URL_SERVICE) % service)
         else:
 
 
             redirect_uri = Const.URL+"oauth?m=callback&service="+service
-            print redirect_uri
+            print 1,redirect_uri
             self.api_authorize = Const.WXAPI_AUTHORIZE.format(APPID=Const.WXAPP,
                                                           REDIRECT_URI=redirect_uri,
                                                           SCOPE="snsapi_userinfo",
                                                           STATE=0)
-            print self.api_authorize
+            print 2,self.api_authorize
             self.redirect(self.api_authorize)
 
 
