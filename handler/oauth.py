@@ -18,11 +18,10 @@ class WxOauthHandler(BaseHandler):
         service = self.get_argument("service","Hotel")
         print 1,service
         openid = self.get_secure_cookie("userid")
-        print "openid222",openid
-        if openid:
+
+        if False:#openid:
             #jingweidu
-            #
-            print "openid:",openid
+            #print "openid:",openid
             self.render("%s.html"%service)
             #self.redirect((Const.URL_SERVICE) % service)
         else:
