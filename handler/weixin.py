@@ -119,71 +119,16 @@ class WeixinHandler(BaseHandler):
         try:
             weixinid = msg['FromUserName']
             keyword = msg['Content'].strip().encode('utf-8')
-            #图灵机器人
-            #url = "http://www.tuling123.com/openapi/api?key=c676b2dd0e54d0612fd37c47fa8c1e5d&info=%s&userid=%s" % (keyword, weixinid)
-            #print keyword
             url = Const.URL_MAIN % (keyword)
             #print url
             respond = requests.get(url)
             respond = respond.content.strip()
-
-            #respond = keyword
-            #code = respond.get('code')
-           # text = respond.encode('utf-8')
-            #url = respond.get('url').encode('utf-8')
             url = Const.URL_WEB% (keyword)
 
             info =respond + "\n\n"+"<a href='"+url+"'>查看更多</a>"
             return info
         except Exception, e:
-            #print e
             pass
-
-            '''
-
-            if code == 100000:
-                return respond.get('text').encode('utf-8')
-            elif code == 200000:#链接
-                text = respond.get('text').encode('utf-8')
-                url = respond.get('url').encode('utf-8')
-                info = text+"\n\n"
-                info =info + "<a href='"+url+"'>点击查看</a>"
-                return info
-            elif code == 305000:#列车
-                text = respond.get('text').encode('utf-8')
-                lists = respond.get('list')
-                info = text+" 点击查看\n\n"
-                for train in lists:
-                    info =info + "<a href='"+train['detailurl'].encode('utf-8')+"'>"+train['trainnum'].encode('utf-8')+":"\
-                          +train['start'].encode('utf-8')+train['terminal'].encode('utf-8')+"</a>\n\n"
-                return info
-            elif code == 302000:#新闻
-                text = respond.get('text').encode('utf-8')
-                lists = respond.get('list')
-                info = text+" 点击查看\n\n"
-                for news in lists:
-                    info =info + "<a href='"+news['detailurl'].encode('utf-8')+"'>"+news['article'].encode('utf-8')+"</a>\n\n"
-                return info
-            elif code == 306000:#航班
-                text = respond.get('text').encode('utf-8')
-                lists = respond.get('list')
-                info = text+" \n\n"
-                for plain in lists:
-                    info =info +plain['flight'].encode('utf-8')+":"+plain['starttime'].encode('utf-8')+"\n\n"
-                return info
-            elif code == 308000:#菜谱
-                text = respond.get('text').encode('utf-8')
-                lists = respond.get('list')
-                info = text+" 点击查看\n\n"
-                for menu in lists:
-                    info =info + "<a href='"+menu['detailurl'].encode('utf-8')+"'>"+menu['name'].encode('utf-8')+":"+menu['info'].encode('utf-8')[:15]+"...</a>\n\n"
-                return info
-
-            else:
-                    return "error"
-         '''
-
-	    pass
     def post_image(self, msg):#图片消息
         self.write("这是一个图片")
 
@@ -194,25 +139,15 @@ class WeixinHandler(BaseHandler):
                 keyword = msg['Recognition'].strip().encode('utf-8')
             else:
                 keyword = ''
-            #图灵机器人
-            #print keyword
-            #url = "http://www.tuling123.com/openapi/api?key=c676b2dd0e54d0612fd37c47fa8c1e5d&info=%s&userid=%s" % (keyword, weixinid)
-            #print keyword
             url = Const.URL_MAIN % (keyword)
-            #print url
             respond = requests.get(url)
             respond = respond.content.strip()
 
-            #respond = keyword
-            #code = respond.get('code')
-           # text = respond.encode('utf-8')
-            #url = respond.get('url').encode('utf-8')
             url = Const.URL_WEB% (keyword)
 
             info =respond + "\n\n"+"<a href='"+url+"'>查看更多</a>"
             return info
         except Exception, e:
-            #print e
             pass
 
     def post_video(self, msg):
@@ -243,9 +178,6 @@ class WeixinHandler(BaseHandler):
         if hashstr == signature:
             return True
         return False
-
-  #
-
 
 #回复消息
 
@@ -340,10 +272,6 @@ class WeixinHandler(BaseHandler):
             msg[child.tag] = child.text
         return msg
 
-
-
-
-##
     def gen_timetoken(self, weixinid):
         now = str(time.strftime('%Y%m%d%H',time.localtime(time.time())))
         minite = str(time.localtime(time.time()).tm_min/10)
