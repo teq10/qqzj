@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f243219-8634-4e01-87bc-adab9ebcafa9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/constant.py" afterPath="$PROJECT_DIR$/constant.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handler/oauth.py" afterPath="$PROJECT_DIR$/handler/oauth.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/handler/weixin.py" afterPath="$PROJECT_DIR$/handler/weixin.py" />
     </list>
     <ignored path="wxTest.iws" />
@@ -72,17 +70,20 @@
       <file leaf-file-name="weixin.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/handler/weixin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42025316" vertical-offset="1244" max-vertical-offset="4440">
-              <caret line="130" column="35" selection-start-line="130" selection-start-column="35" selection-end-line="130" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.3902439" vertical-offset="2061" max-vertical-offset="4605">
+              <caret line="197" column="25" selection-start-line="197" selection-start-column="25" selection-end-line="197" selection-end-column="25" />
               <folding>
                 <element signature="e#25#35#0" expanded="true" />
+                <element signature="e#314#325#0" expanded="false" />
+                <element signature="e#363#898#0" expanded="false" />
+                <element signature="e#1510#1550#0" expanded="false" />
                 <element signature="e#1708#2065#0" expanded="false" />
                 <element signature="e#2340#3047#0" expanded="false" />
-                <marker date="1473235595000" expanded="true" signature="1769:1804" placeholder="SELECT id FR..user..." />
-                <marker date="1473235595000" expanded="true" signature="1870:1961" placeholder="insert into ..." />
-                <marker date="1473235595000" expanded="true" signature="2569:2608" placeholder="SELECT openi..user..." />
-                <marker date="1473235595000" expanded="true" signature="2674:2765" placeholder="insert into ..." />
-                <marker date="1473235595000" expanded="true" signature="2828:2920" placeholder="update user ..." />
+                <marker date="1473822933000" expanded="true" signature="1769:1804" placeholder="SELECT id FR..user..." />
+                <marker date="1473822933000" expanded="true" signature="1870:1961" placeholder="insert into ..." />
+                <marker date="1473822933000" expanded="true" signature="2569:2608" placeholder="SELECT openi..user..." />
+                <marker date="1473822933000" expanded="true" signature="2674:2765" placeholder="insert into ..." />
+                <marker date="1473822933000" expanded="true" signature="2828:2920" placeholder="update user ..." />
               </folding>
             </state>
           </provider>
@@ -173,7 +174,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="26" />
+    <option name="x" value="447" />
     <option name="y" value="23" />
     <option name="width" value="1176" />
     <option name="height" value="777" />
@@ -443,7 +444,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="26" y="23" width="1176" height="777" extended-state="0" />
+    <frame x="447" y="23" width="1176" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -532,13 +533,16 @@
           <caret line="104" column="30" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
           <folding>
             <element signature="e#25#35#0" expanded="true" />
+            <element signature="e#314#325#0" expanded="false" />
+            <element signature="e#363#898#0" expanded="false" />
+            <element signature="e#1510#1550#0" expanded="false" />
             <element signature="e#1708#2065#0" expanded="false" />
             <element signature="e#2340#3047#0" expanded="false" />
-            <marker date="1473235595000" expanded="true" signature="1769:1804" placeholder="SELECT id FR..user..." />
-            <marker date="1473235595000" expanded="true" signature="1870:1961" placeholder="insert into ..." />
-            <marker date="1473235595000" expanded="true" signature="2569:2608" placeholder="SELECT openi..user..." />
-            <marker date="1473235595000" expanded="true" signature="2674:2765" placeholder="insert into ..." />
-            <marker date="1473235595000" expanded="true" signature="2828:2920" placeholder="update user ..." />
+            <marker date="1473822933000" expanded="true" signature="1769:1804" placeholder="SELECT id FR..user..." />
+            <marker date="1473822933000" expanded="true" signature="1870:1961" placeholder="insert into ..." />
+            <marker date="1473822933000" expanded="true" signature="2569:2608" placeholder="SELECT openi..user..." />
+            <marker date="1473822933000" expanded="true" signature="2674:2765" placeholder="insert into ..." />
+            <marker date="1473822933000" expanded="true" signature="2828:2920" placeholder="update user ..." />
           </folding>
         </state>
       </provider>
@@ -707,17 +711,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/handler/weixin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42025316" vertical-offset="1244" max-vertical-offset="4440">
-          <caret line="130" column="35" selection-start-line="130" selection-start-column="35" selection-end-line="130" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.3902439" vertical-offset="2061" max-vertical-offset="4605">
+          <caret line="197" column="25" selection-start-line="197" selection-start-column="25" selection-end-line="197" selection-end-column="25" />
           <folding>
             <element signature="e#25#35#0" expanded="true" />
+            <element signature="e#314#325#0" expanded="false" />
+            <element signature="e#363#898#0" expanded="false" />
+            <element signature="e#1510#1550#0" expanded="false" />
             <element signature="e#1708#2065#0" expanded="false" />
             <element signature="e#2340#3047#0" expanded="false" />
-            <marker date="1473235595000" expanded="true" signature="1769:1804" placeholder="SELECT id FR..user..." />
-            <marker date="1473235595000" expanded="true" signature="1870:1961" placeholder="insert into ..." />
-            <marker date="1473235595000" expanded="true" signature="2569:2608" placeholder="SELECT openi..user..." />
-            <marker date="1473235595000" expanded="true" signature="2674:2765" placeholder="insert into ..." />
-            <marker date="1473235595000" expanded="true" signature="2828:2920" placeholder="update user ..." />
+            <marker date="1473822933000" expanded="true" signature="1769:1804" placeholder="SELECT id FR..user..." />
+            <marker date="1473822933000" expanded="true" signature="1870:1961" placeholder="insert into ..." />
+            <marker date="1473822933000" expanded="true" signature="2569:2608" placeholder="SELECT openi..user..." />
+            <marker date="1473822933000" expanded="true" signature="2674:2765" placeholder="insert into ..." />
+            <marker date="1473822933000" expanded="true" signature="2828:2920" placeholder="update user ..." />
           </folding>
         </state>
       </provider>

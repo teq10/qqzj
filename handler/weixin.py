@@ -188,7 +188,32 @@ class WeixinHandler(BaseHandler):
         self.write("这是一个图片")
 
     def post_voice(self, msg):#
-        self.write(self.rep_default(msg))
+        try:
+            weixinid = msg['FromUserName']
+            if 'Recognition' in msg:
+                keyword = msg['Recognition'].strip().encode('utf-8')
+            else:
+                keyword = ''
+            #图灵机器人
+            print keyword
+            #url = "http://www.tuling123.com/openapi/api?key=c676b2dd0e54d0612fd37c47fa8c1e5d&info=%s&userid=%s" % (keyword, weixinid)
+            #print keyword
+            url = Const.URL_MAIN % (keyword)
+            #print url
+            respond = requests.get(url)
+            respond = respond.content.strip()
+
+            #respond = keyword
+            #code = respond.get('code')
+           # text = respond.encode('utf-8')
+            #url = respond.get('url').encode('utf-8')
+            url = Const.URL_WEB% (keyword)
+
+            info =respond + "\n\n"+"<a href='"+url+"'>查看更多</a>"
+            return info
+        except Exception, e:
+            #print e
+            pass
 
     def post_video(self, msg):
         self.write(self.rep_default(msg))
