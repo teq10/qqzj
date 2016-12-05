@@ -17,25 +17,23 @@ class WxOauthHandler(BaseHandler):
         :return:
         """
         service = self.get_argument("service","Hotel")
-        #print 1,service
+
         openid = self.get_secure_cookie("userid")
 
-        if False:#openid:
+        if openid:
             #jingweidu
-            #print "openid:",openid
             #self.render("%s.html"%service)
             self.redirect((Const.URL_SERVICE) % service)
         else:
 
 
             redirect_uri = Const.URL+"oauth?m=callback&service="+service
-            #print 1,redirect_uri
             redirect_uri = urllib.quote(redirect_uri)
             self.api_authorize = Const.WXAPI_AUTHORIZE.format(APPID=Const.WXAPP,
                                                           REDIRECT_URI=redirect_uri,
                                                           SCOPE="snsapi_userinfo",
                                                           STATE=0)
-            #print 2,self.api_authorize
+
             self.redirect(self.api_authorize)
 
 
@@ -71,27 +69,25 @@ class WxOauthHandler(BaseHandler):
         :return:
         """
         service = self.get_argument("service","Hotel")
-        #print 2,service
+
         code = self.get_argument("code")
         if not code:
             self.render("error.html", message="get code failed!")
             return
 
         token = self._get_access_token(code)
-        #print token
+
 
         if not token:
             self.render("error.html", message="get access_token failed!")
             return
 
         wxuser = self._get_userinfo(token.get("access_token"), token.get("openid"))
-        #print wxuser
+
 
         if not wxuser:
             self.render("error.html", message="get wxuser failed!")
             return
-        print wxuser['openid']
-        #print "hehe"
         self.set_secure_cookie("userid",wxuser['openid'])
         user = self.db.get("SELECT openid FROM user WHERE openid = %s", wxuser['openid'])
 
