@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 routes = [
-    (r"/", "handler.weixin.WeixinHandler"),
-    (r"/menu", "handler.weixinmenu.WeixinMenuHandler"),
+    (r"/", "handler.test.test"),
     (r"/test", "handler.test.test"),
-    (r"/oauth", "handler.oauth.WxOauthHandler")
+    (r"/female", "handler.femaleInfo.FemaleHandler"),
+    (r"/male", "handler.maleInfo.MaleHandler")
 ]

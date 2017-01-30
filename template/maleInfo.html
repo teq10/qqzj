@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <title>男生申请入口</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/static/css/global.min.css">
+    <link rel="stylesheet"
+          href="/static/css/editresume_subs.min.css">
+</head>
+<body>
+<p class="globalMessage">{{message}}</p>
+<header class="editsubpage-header">
+    <p class="editsubpage-title">男生个人信息填写</p>
+</header>
+
+<section id="content">
+    <form id="editbasicinfo" action="male" method="post">
+        <div class="section list">
+            <div class="section-sub item"><span class="item-name">昵称</span>
+                <input class="item-value input-blank mr40" type="text" name="nickName"
+                       placeholder="输入名字或昵称"
+                       required="">
+            </div>
+
+            <div class="section-sub item"><span class="item-name">微信号</span>
+                <input class="item-value input-blank mr40" type="text" name="wechatId"
+                       placeholder="输入微信号" required="">
+            </div>
+            <div class="section-sub item"><span class="item-name">手机</span>
+                <input class="item-value input-blank mr40" type="text" name="phone"
+                       placeholder="输入手机"
+                       required="">
+            </div>
+            <div class="section-sub item"><span class="item-name">出生年月</span>
+                <input class="item-value input-blank mr40" type="text" name="birth"
+                       placeholder="输入出生年月" required="">
+            </div>
+            <div class="section-sub item"><span class="item-name">身高</span>
+                <input class="item-value input-blank mr40" type="text" name="height"
+                       placeholder="输入身高(cm)" required="">
+            </div>
+            <div class="section-sub item"><span class="item-name">城市</span>
+                <input class="item-value input-blank mr40" type="text" name="city"
+                       placeholder="输入所在城市" required="">
+            </div>
+            <div class="section-sub item"><span class="item-name">职业</span>
+                <input class="item-value input-blank mr40" type="text" name="job"
+                       placeholder="请输入您的职业" required="">
+            </div>
+            <div class="section-sub item"><span class="item-name">收入说明</span>
+                <input class="item-value input-blank mr40" type="text" name="income"
+                       placeholder="输入平均月收入" required="">
+            </div>
+            <div class="section-sub item"><span class="item-name">父母情况</span>
+                <input class="item-value input-blank mr40" type="text" name="parents"
+                       placeholder="是否退休，健在等" required="">
+            </div>
+            <div class="section-sub item"><span class="item-name">是否独生子女</span>
+                <select class="item-value input-blank mr40" name="isSingleton" dir="rtl">
+                    <option value="是">是</option>
+                    <option value="否">否</option>
+                </select>
+            </div>
+            <div class="section-sub item"><span class="item-name">是否有车</span>
+                <select class="item-value input-blank mr40" name="hasCar" dir="rtl">
+                    <option value="是">是</option>
+                    <option value="否">否</option>
+                </select>
+            </div>
+            <div class="section-sub item"><span class="item-name">是否有房</span>
+                <select class="item-value input-blank mr40" name="hasHouse" dir="rtl">
+                    <option value="是">是</option>
+                    <option value="否">否</option>
+                </select>
+            </div>
+            <div class="section-sub item"><span class="item-name">兴趣爱好</span>
+                <input class="item-value input-blank mr40" type="text" name="hobby"
+                       placeholder="输入兴趣爱好" required="">
+            </div>
+
+            <div class="section-sub item"><span class="item-name">自我介绍</span></div>
+            <div class="section-sub item withinput">
+                <textarea name="intro" placeholder="自我介绍" maxlength="250"
+                          class="input-blank"></textarea>
+            </div>
+
+            <div class="section-sub item"><span class="item-name">理想另一半</span></div>
+            <div class="section-sub item withinput">
+                <textarea name="idealMate" placeholder="对伴侣的要求（身高，职业，收入....）" maxlength="250"
+                          class="input-blank"></textarea>
+            </div>
+        </div>
+        <input type="submit" value="提交" class="btn-fullwidth">
+    </form>
+    <a href="male" class="btn-fullwidth logout">取消</a>
+</section>
+<!-- footer.jade-->
+
+<footer>powered by QQZJ1314</footer>
+<script src="/static/js/jquery.2.1.1.min.js"></script>
+<script src="/static/js/utility.min.js"></script>
+<script src="/static/js/editbasicinfo.min.js"></script>
+
+
