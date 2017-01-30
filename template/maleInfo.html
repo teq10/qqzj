@@ -9,6 +9,25 @@
     <link rel="stylesheet" href="/static/css/global.min.css">
     <link rel="stylesheet"
           href="/static/css/editresume_subs.min.css">
+    <style>
+        .fileInputContainer{
+        height:64px;
+        background:url(data:image/png;base64,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);
+        position:relative;
+        width: 64px;
+        }
+        .fileInput{
+        height:64px;
+        overflow: hidden;
+        font-size: 64px;
+        position:absolute;
+        right:0;
+        top:0;
+        opacity: 0;
+        filter:alpha(opacity=0);
+        cursor:pointer;
+        }
+    </style>
 </head>
 <body>
 <p class="globalMessage">{{message}}</p>
@@ -92,6 +111,14 @@
                 <textarea name="idealMate" placeholder="对伴侣的要求（身高，职业，收入....）" maxlength="250"
                           class="input-blank"></textarea>
             </div>
+            <div class="section-sub item"><span class="item-name">个人生活照</span></div>
+            <div class="section-sub item withinput">
+                <div class="fileInputContainer">
+                <input accept="image/*" class="fileInput" type="file" name="uploadImage" id="uploadImage"/>
+                </div>
+                <img id="lifePhotoImg" src="" style="display: block;max-width: 100%;" style="display: none;">
+                <input type="hidden" name="lifePhoto" id="lifePhoto"/>
+            </div>
         </div>
         <input type="submit" value="提交" class="btn-fullwidth">
     </form>
@@ -103,5 +130,30 @@
 <script src="/static/js/jquery.2.1.1.min.js"></script>
 <script src="/static/js/utility.min.js"></script>
 <script src="/static/js/editbasicinfo.min.js"></script>
+<script language="javascript">
+    $("#uploadImage").change(
+    function () {
+        var formData = new FormData();
+        formData.append('uploadImage', $('#uploadImage')[0].files[0]);
+        $.ajax({
+            url: '/upload',
+            type: 'POST',
+            cache: false,
+            data: formData,
+            processData: false,
+            contentType: false
+        }).done(function(data) {
+            $(".fileInputContainer").css('display','none');
+            $("#lifePhotoImg").css("display", "");
+            $("#lifePhotoImg").attr('src', data.imgUrl);
+            $("#lifePhoto").val(data.imgUrl);
+        }).fail(function(res) {
+            alert("图片上传失败，请重试！");
+        })
+    }
+);
+</script>
+</body>
+</html>
 
 

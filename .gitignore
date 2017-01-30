@@ -57,3 +57,6 @@ env/*
 
 # log
 log/*
+
+# static response upload
+static/upload/*
