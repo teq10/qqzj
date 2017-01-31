@@ -1,7 +1,7 @@
 import os.path
 from tornado.options import define
 
-define("port", default=9000, help="run on given port",type=int)
+define("port", default=9001, help="run on given port",type=int)
 define("mysql_host", default="teq6.com", help="mysql_host", type=str)
 define("mysql_database", default="qqzj", help="mysql_database", type=str)
 define("mysql_user", default="root", help="mysql_user", type=str)
