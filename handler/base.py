@@ -3,7 +3,7 @@ import os
 import uuid
 import tornado.web
 import datetime,time
-import requests,json
+import json
 from setting import settings
 import constant as Const
 
