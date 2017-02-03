@@ -1,0 +1,223 @@
+<html lang="zh-cmn-Hans">
+<head>
+    <title>用户信息</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, info-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="/static/css/global.min.css">
+    <link rel="stylesheet"
+          href="/static/css/editresume_subs.min.css">
+</head>
+<body>
+<p class="globalMessage"></p>
+
+<form action="view?m=female" method="post" id="femaleForm">
+    <input hidden="hidden" name="password" type="text" value={{password}}>
+    <input type="submit" value="女生信息" {%if m=='female' %}style="color:red" {% else %} style="color:darkgray" {% end %}>
+</form>
+<form action="view?m=male" method="post" id="maleForm">
+    <input hidden="hidden" name="password" type="text" value={{password}}>
+    <input type="submit" value="男生信息" {%if m=='male' %}style="color:red" {% else %} style="color:darkgray" {% end %}>
+</form>
+
+{% if m== 'female'%}
+<div class="main">
+    <div class="category">
+        <form action="view?m=female" method="post" id="femaleFormWithArgu">
+            <input hidden="hidden" name="password" type="text" value={{password}}>
+            <table id="head" class="table table-bordered tb">
+                <tbody>
+                <tr>
+                    <th>手机号</th>
+                    <td>
+                        <input class="span2" name="phone" type="text" value="">
+                    </td>
+                    <th>是否独生子女</th>
+                    <td>
+                        <select name="isSingleton" class="span2">
+                            <option value=""></option>
+                            <option value="是">是</option>
+                            <option value="否">否</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>身高</th>
+                    <td>
+                        <input class="span2" name="height" type="text" value="">
+                    </td>
+                    <th>职业</th>
+                    <td>
+                        <input class="span2" name="job" type="text" value="">
+                    </td>
+                    <td>
+                        <button class="btn
+pull-right span2"><i class="icon-search
+icon-large"></i>
+                            搜索(未开通)
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+        <table id="employee_tables" class="table table-striped table-border" sort="true">
+            <thead>
+            <tr>
+                <th style="width:30px;">编号</th>
+                <th style="width:50px;">昵称</th>
+                <th style="width:50px;">微信号</th>
+                <th style="width:50px;">手机</th>
+                <th style="width:50px;">出生年月</th>
+                <th style="width:50px;">身高</th>
+                <th style="width:50px;">城市</th>
+                <th style="width:50px;">职业</th>
+                <th style="width:70px;">收入说明</th>
+                <th style="width:70px;">父母情况</th>
+                <th style="width:30px;">独生子女</th>
+                <th style="width:100px;">兴趣爱好</th>
+                <th style="width:100px;">自我介绍</th>
+                <th style="width:100px;">理想对象</th>
+                <th style="width:100px;">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% if users %}
+            {% for user in users %}
+                <tr>
+                <td>{{user.id}}</td>
+                <td>{{user.nickName}}</td>
+                <td>{{user.wechatId}}</td>
+                <td>{{user.phone}}</td>
+                <td>{{user.birth}}</td>
+                <td>{{user.height}}</td>
+                <td>{{user.city}}</td>
+                <td>{{user.job}}</td>
+                <td>{{user.income}}</td>
+                <td>{{user.parents}}</td>
+                <td>{{user.isSingleton}}</td>
+                <td>{{user.hobby}}</td>
+                <td>{{user.intro}}</td>
+                <td>{{user.idealMate}}</td>
+                <td>
+                    <a href="view?m=female">查看照片（未开通）</a>
+                    <a href="view?m=female" >其他</a>
+                </td>
+            </tr>
+            {% end %}
+            {% end %}
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+{% else %}
+<div class="main">
+    <div class="category">
+        <form action="view?m=male" method="post" id="maleFormWithArgu">
+            <input hidden="hidden" name="password" type="text" value={{password}}>
+            <table id="head2" class="table table-bordered tb">
+                <tbody>
+                <tr>
+                    <th>手机号</th>
+                    <td>
+                        <input class="span2" name="phone" type="text" value="">
+                    </td>
+                    <th>是否独生子女</th>
+                    <td>
+                        <select name="isSingleton" class="span2">
+                            <option value=""></option>
+                            <option value="是">是</option>
+                            <option value="否">否</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>身高</th>
+                    <td>
+                        <input class="span2" name="height" type="text" value="">
+                    </td>
+                    <th>职业</th>
+                    <td>
+                        <input class="span2" name="job" type="text" value="">
+                    </td>
+                    <td>
+                        <button class="btn
+pull-right span2"><i class="icon-search
+icon-large"></i>
+                            搜索(未开通)
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+        <table id="employee_tables2" class="table table-striped table-border" sort="true">
+            <thead>
+            <tr>
+                <th style="width:30px;">编号</th>
+                <th style="width:50px;">昵称</th>
+                <th style="width:50px;">微信号</th>
+                <th style="width:50px;">手机</th>
+                <th style="width:50px;">出生年月</th>
+                <th style="width:50px;">身高</th>
+                <th style="width:50px;">城市</th>
+                <th style="width:50px;">职业</th>
+                <th style="width:70px;">收入说明</th>
+                <th style="width:70px;">父母情况</th>
+                <th style="width:30px;">独生子女</th>
+                <th style="width:30px;">有车</th>
+                <th style="width:30px;">有房</th>
+                <th style="width:100px;">兴趣爱好</th>
+                <th style="width:100px;">自我介绍</th>
+                <th style="width:100px;">理想对象</th>
+                <th style="width:100px;">操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% if users %}
+            {% for user in users %}
+                <tr>
+                <td>{{user.id}}</td>
+                <td>{{user.nickName}}</td>
+                <td>{{user.wechatId}}</td>
+                <td>{{user.phone}}</td>
+                <td>{{user.birth}}</td>
+                <td>{{user.height}}</td>
+                <td>{{user.city}}</td>
+                <td>{{user.job}}</td>
+                <td>{{user.income}}</td>
+                <td>{{user.parents}}</td>
+                <td>{{user.isSingleton}}</td>
+                <td>{{user.hasCar}}</td>
+                <td>{{user.hasHouse}}</td>
+                <td>{{user.hobby}}</td>
+                <td>{{user.intro}}</td>
+                <td>{{user.idealMate}}</td>
+                <td>
+                    <a href="view?m=male">查看照片（未开通）</a>
+                    <a href="view?m=male" >其他</a>
+                </td>
+            </tr>
+            {% end %}
+            {% end %}
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+{% end %}
+
+
+<a href="view">返回</a>
+<!-- footer.jade-->
+
+<footer>powered by QQZJ1314</footer>
+<script src="/static/js/jquery.2.1.1.min.js"></script>
+<script src="/static/js/utility.min.js"></script>
+<script src="/static/js/editbasicinfo.min.js"></script>
+
+
