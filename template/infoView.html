@@ -102,7 +102,9 @@ icon-large"></i>
                 <td>{{user.intro}}</td>
                 <td>{{user.idealMate}}</td>
                 <td>
-                    <a href="#" onclick="openwin({{user.img}})">查看照片</a>
+                    {% if user.img %}
+                    <a id="view1" href="#" onmouseover="show(this, 'liftPhotoPreview', '{{user.img}}')" onmouseout="hide(this, 'liftPhotoPreview')">查看照片</a>
+                    {% end %}
                     <!--<a href="view?m=female">查看照片（未开通）</a>-->
                     <a href="view?m=female" >其他</a>
                 </td>
@@ -199,7 +201,9 @@ icon-large"></i>
                 <td>{{user.intro}}</td>
                 <td>{{user.idealMate}}</td>
                 <td>
-                    <a href="#" onclick="openwin()">查看照片</a>
+                    {% if user.img %}
+                    <a id="view2" href="#" onmouseover="show(this, 'liftPhotoPreview', '{{user.img}}')" onmouseout="hide(this, 'liftPhotoPreview')">查看照片</a>
+                    {% end %}
                     <!--<a href="view?m=photo&url="+{{user.img}}>查看照片</a>-->
                     <a href="view?m=male" >其他</a>
                 </td>
@@ -218,17 +222,25 @@ icon-large"></i>
 <a href="view">返回</a>
 <!-- footer.jade-->
 
-<footer>powered by QQZJ1314</footer>
-<script src="/static/js/jquery.2.1.1.min.js"></script>
-<script src="/static/js/utility.min.js"></script>
-<script src="/static/js/editbasicinfo.min.js"></script>
-<script LANGUAGE="JavaScript">
-<!--
-function openwin() {
+<div id="liftPhotoPreview" style="position:absolute;display:none;border:1px solid silver;background:white;">
+<img id="liftPhotoPreviewImg" src="http://avatar.csdn.net/2/6/1/1_hollboy.jpg" />
+</div>
 
-window.open ("view?m=photo&img=446ccaeef9c011e69543a45e60daf503.jpg", "查看照片", "height=400, width=400, toolbar =no, menubar=no, scrollbars=yes, resizable=yes, location=no, status=no")
+<footer>powered by QQZJ1314</footer>
+
+<script src="/static/js/jquery.2.1.1.min.js"></script>
+<script language="javascript">
+function show(obj, id, liftPhoto) {
+    var objDiv = $("#"+id+"");
+    $(objDiv).css("display", "block");
+    $(objDiv).css("left", event.clientX);
+    $(objDiv).css("top", event.clientY + 20);
+    $("#liftPhotoPreviewImg").attr('src', liftPhoto);
 }
-//-->
+function hide(obj, id) {
+    var objDiv = $("#"+id+"");
+    $(objDiv).css("display", "none");
+}
 </script>
 </body>
 </html>
