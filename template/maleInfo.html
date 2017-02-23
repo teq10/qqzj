@@ -36,7 +36,7 @@
 </header>
 
 <section id="content">
-    <form id="editbasicinfo" action="male" method="post">
+    <form id="editbasicinfo" name="editbasicinfo" action="male" method="post" onsubmit="return checkSubmit();">
         <div class="section list">
             <div class="section-sub item"><span class="item-name">昵称</span>
                 <input class="item-value input-blank mr40" type="text" name="nickName"
@@ -152,6 +152,19 @@
         })
     }
 );
+</script>
+
+<script type="text/javascript">
+  function checkSubmit()
+{
+	if(document.editbasicinfo.lifePhoto.value=='')
+	{
+		document.editbasicinfo.lifePhoto.focus();
+		alert("个人生活照必须上传！");
+		return false;
+	}
+
+}
 </script>
 </body>
 </html>

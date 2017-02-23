@@ -2,11 +2,24 @@
 from handler.base import BaseHandler
 import hashlib
 from constant import *
-
+from setting import settings
+import os
 
 class InfoViewHandler(BaseHandler):
     def get_default(self):
         self.render("view.html")
+
+    def get_photo(self):
+        img = self.get_argument("img", "")
+        print img
+
+        if img:
+            img = os.path.join(settings['upload_path'] , img)
+            # img = "file://" + img
+            print img
+            self.render("photo.html",img=img)
+        else:
+            self.render("error.html",message="找不到照片")
 
     def post_female(self):
         password = self.get_argument('password', '')
