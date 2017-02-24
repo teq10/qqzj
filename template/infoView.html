@@ -223,7 +223,7 @@ icon-large"></i>
 <!-- footer.jade-->
 
 <div id="liftPhotoPreview" style="position:absolute;display:none;border:1px solid silver;background:white;">
-<img id="liftPhotoPreviewImg" src="http://avatar.csdn.net/2/6/1/1_hollboy.jpg" />
+<img id="liftPhotoPreviewImg" src="http://avatar.csdn.net/2/6/1/1_hollboy.jpg" height="400" />
 </div>
 
 <footer>powered by QQZJ1314</footer>
@@ -233,8 +233,8 @@ icon-large"></i>
 function show(obj, id, liftPhoto) {
     var objDiv = $("#"+id+"");
     $(objDiv).css("display", "block");
-    $(objDiv).css("left", event.clientX);
-    $(objDiv).css("top", event.clientY + 20);
+    $(objDiv).css("left", 0);
+    $(objDiv).css("top", 0);
     $("#liftPhotoPreviewImg").attr('src', liftPhoto);
 }
 function hide(obj, id) {
